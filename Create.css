@@ -1,0 +1,126 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #ffe6f0, #fff); /* Girly pink gradient background */
+    background-image: radial-gradient(circle, rgba(255,255,255,0.3) 1px, transparent 1px); /* Subtle floral-like pattern */
+    background-size: 20px 20px; /* Pattern size for girly aesthetic */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffd1dc; /* Light pink */
+    border-bottom: 2px solid #ffd700; /* Gold accent */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #fff; /* White text */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+/* About Section */
+.about {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.about p {
+    font-size: 1.2em;
+    color: #d4af37; /* Gold text */
+}
+
+/* Products Section */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Card Styles */
+.card {
+    background-color: #fff;
+    border: 1px solid #ffd700; /* Gold border */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 250px;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover transition */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slight scale on hover */
+    box-shadow: 0 8px 16px rgba(212, 175, 55, 0.3); /* Gold shadow on hover */
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card h3 {
+    margin: 10px 0;
+    color: #ff69b4; /* Pink text */
+    font-size: 1.5em;
+}
+
+.card .price {
+    font-size: 1.2em;
+    color: #d4af37; /* Gold text */
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffd1dc; /* Light pink */
+    border-top: 2px solid #ffd700; /* Gold accent */
+}
+
+footer a {
+    color: #fff; /* White text */
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #ffd700; /* Gold on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .card {
+        width: 90%; /* Full width on mobile */
+        max-width: 300px;
+    }
+    
+    header h1 {
+        font-size: 2em;
+    }
+    
+    .about p {
+        font-size: 1em;
+    }
+}
